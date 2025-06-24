@@ -196,8 +196,8 @@ h2{
     }
 }
 
-@media screen and (max-width: 6000px) {
+@media screen and (max-width: 600px) {
   #Hero{
-         height: 65vh;
+         height: auto;
     }
 }
