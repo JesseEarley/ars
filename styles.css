@@ -1,0 +1,210 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+     width: 100%; /* Or your desired width */
+  box-sizing: border-box;
+}
+
+body{
+    font-size: 10px;;
+    margin:0;
+    padding: 0;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.sr-only{
+    position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.width-1200px{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1.4rem;;
+}
+
+#Hero{
+    background: url('images/heroImage.png') center center no-repeat;
+    background-size: cover;
+    height: 50vh;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+}
+    #Hero h1{
+        color: white;
+        font-size: 3rem;
+        padding: 1rem 0 2rem;
+        text-align: center;
+        text-shadow: 2px 2px 2px #000;
+    }
+
+    #Hero > p{
+        text-shadow: 2px 2px 2px #000;
+        color: #fff;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    #Hero h2{
+        margin-bottom: 1rem;;
+    }
+    #Hero form{
+        background: #fff;
+        border-radius: 10px;;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+        width: 25vw;
+    }
+    #Hero form label,
+    #Hero form input,
+    #Hero form select{
+        display: block;
+        margin: .5rem auto;
+        padding: .5rem;
+        width: 80%;
+    }
+
+    #Hero form input,
+    #Hero form select{
+        background: #FFF;
+        border: 1px solid #ccc;;
+    }
+
+        #Hero form button[type="submit"]{
+            background: #D62629;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+        }
+
+#Services h2{
+    margin: 2rem 0;
+    text-align: center;
+    background: #D62629;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #Hero form{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  #Hero{
+         height: 65vh;
+    }
+}
