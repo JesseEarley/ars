@@ -124,6 +124,7 @@ h2{
 
 #Hero{
     background: url('images/heroImage.png') center center no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 50vh;
     font-size: 1.2rem;
