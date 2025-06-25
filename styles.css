@@ -96,6 +96,7 @@ input, select {
 }
 
 body{
+    font-family: 'Open Sans', sans-serif;;
     font-size: 10px;;
     margin:0;
     padding: 0;
@@ -120,6 +121,12 @@ h2{
     max-width: 1200px;
     margin: 0 auto;
     font-size: 1.4rem;
+}
+
+.two-column-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .three-column-grid { 
@@ -217,30 +224,90 @@ h2{
   padding: 1rem 0;
 }
 
+#MakingItWork{
+    background: #F0F8FF;
+    padding: 2rem 0;
+}
+
+#MakingItWork p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+}
+
+#MakingItWork a{
+    color: #D62629;
+}
+
+#MakingItWork img{
+    max-width: 100%;
+    height: auto;
+}
+
+#JoinPro{
+    background: url('images/joinPro.png') center center no-repeat;
+    background-size: cover;
+    color: #FFF;
+    height: 300px;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+}
+
+#JoinPro p{
+    margin: 1rem 0;
+}
+
+#JoinPro a{
+    background: #D62629;
+    color: #FFF;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    width: 200px;
+    border-radius: 20px;
+    text-decoration: none;;
+}
+
 @media screen and (max-width: 1200px) {
   #Hero form{
         width: 80vw;
     }
 
-    .three-column-grid{
+    .two-column-grid,
+    .three-column-grid,
+    #JoinPro{
         padding: 0 1rem;
     }
+
+    #MakingItWork{
+        padding: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 800px) {
-.three-column-grid { 
-    grid-template-columns: repeat(2, 1fr);
-}
+    .three-column-grid { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #MakingItWork img{
+        width: 300px !important;
+    }
 }
 
 @media screen and (max-width: 600px) {
   #Hero{
          height: auto;
     }
+       #MakingItWork img{
+        float: none !important;
+        width: 100% !important;;
+    } 
 }
 
 @media screen and (max-width: 500px) {
-.three-column-grid { 
-    grid-template-columns: repeat(1, 1fr);
-}
+    .two-column-grid,
+    .three-column-grid { 
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
