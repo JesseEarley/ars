@@ -122,6 +122,28 @@ h2{
     font-size: 1.4rem;
 }
 
+.three-column-grid { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.service-item{
+    text-align: center;
+}
+
+.service-item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.service-item h3{
+    background: #0B2744;
+    color: #fff;
+    padding: 1rem;
+    margin: -10px 0 1rem;
+}
+
 #Nav{
     height: 185px;
     overflow: hidden;
@@ -199,10 +221,26 @@ h2{
   #Hero form{
         width: 80vw;
     }
+
+    .three-column-grid{
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+.three-column-grid { 
+    grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media screen and (max-width: 600px) {
   #Hero{
          height: auto;
     }
+}
+
+@media screen and (max-width: 500px) {
+.three-column-grid { 
+    grid-template-columns: repeat(1, 1fr);
+}
 }
